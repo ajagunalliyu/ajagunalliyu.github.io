@@ -1,65 +1,74 @@
 
 body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  background: #fefefe;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e7f3ff;
   color: #222;
+  margin: 0;
+  padding: 0;
 }
 header {
   text-align: center;
-  background: #003366;
-  color: #fff;
   padding: 2rem 1rem;
+  background-color: #cce5ff;
 }
-.profile-pic {
-  width: 120px;
-  height: 120px;
+.profile-img {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  border: 4px solid #fff;
 }
 .tagline {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: #444;
 }
-section {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.about {
+  padding: 2rem;
+  background-color: #f5faff;
 }
-.projects h2, .contact h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.3rem;
-  color: #003366;
+.projects {
+  padding: 2rem;
+}
+.projects h2 {
+  text-align: center;
+  color: #005a9c;
 }
 .project {
-  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .project img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
 .project h3 {
   margin-top: 0.5rem;
 }
-.project p {
-  font-size: 0.95rem;
-}
-.contact .icons {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.8rem;
-  justify-content: center;
-  padding-top: 1rem;
-}
-.contact .icons a {
-  color: #003366;
+.project a {
   text-decoration: none;
+  color: #0077cc;
 }
 footer {
   text-align: center;
   padding: 1rem;
-  background: #f4f4f4;
-  color: #666;
-  margin-top: 3rem;
+  background-color: #cce5ff;
+}
+footer a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.resume-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
 }
