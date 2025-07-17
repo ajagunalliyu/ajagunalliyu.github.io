@@ -1,67 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ajagun Alliyu Aremu | Data Analyst</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Ajagun Alliyu</div>
-      <ul class="nav-links">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">My Portfolio</a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon"><span></span></label>
+      <ul class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="profile.jpg" alt="Profile" class="profile-img rectangle-img" />
+    <h1>Hi, I'm Alliyu Ajagun</h1>
+    <p class="tagline">Analyst | Insight Builder | Problem Solver</p>
   </header>
 
-  <section class="hero">
-    <img src="profile.jpg" alt="Ajagun Alliyu Aremu" class="profile-img" />
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I help businesses make sense of their data to drive strategic decisions and improve performance.</p>
   </section>
 
-  <section id="about" class="about fade-in">
-    <p>
-      I'm Ajagun Alliyu Aremu, an Analyst, Strategic Thinker, Insights Architect, and Results Enabler powered by data. With a strong foundation in SQL, Power BI, Excel, and Python, I help transform complex data into clear, actionable business insights across industries.
-    </p>
-  </section>
-
-  <section id="projects" class="projects fade-in">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <img src="project1.jpg" alt="Cybersecurity Dashboard" />
-      <h3>Cybersecurity Intelligence Visualization</h3>
-      <p>I used Power BI to analyze global cybersecurity incidents, visualizing attack types, sources, and financial losses to inform proactive defense strategies.</p>
-      <a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">Read More</a>
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <img src="project1.jpg" alt="Project Screenshot" />
+      <h3>Project Title</h3>
+      <p>Short description of your project goes here.</p>
+      <a href="#">View Project</a>
     </div>
-    <div class="project-card">
-      <img src="project2.jpg" alt="Global Sales Dashboard" />
-      <h3>Global Store Sales Performance</h3>
-      <p>I used Power BI to track sales trends, segment profitability by category, and highlight KPIs to support strategic decisions in retail operations.</p>
-      <a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">Read More</a>
-    </div>
-    <div class="project-card">
-      <img src="project3.jpg" alt="Customer Feedback Analysis" />
-      <h3>Customer Feedback Analysis</h3>
-      <p>I used Excel to analyze and visualize customer satisfaction surveys for Hotel Inc., offering actionable insights on areas to improve guest experience.</p>
-      <a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">Read More</a>
-    </div>
+    <!-- Add more projects as needed -->
   </section>
 
-  <section id="resume" class="resume fade-in">
-    <a href="Ajagun-Alliyu-CV.pdf" download class="resume-btn">Download Resume</a>
+  <!-- Resume Section -->
+  <section class="about" id="resume">
+    <h2>View Resume</h2>
+    <a href="resume.pdf" class="resume-btn" download>View Resume</a>
   </section>
 
-  <section id="contact" class="contact fade-in">
-    <a href="mailto:ajagunalliyu@gmail.com"><img src="email.svg" alt="Email"></a>
-    <a href="https://www.linkedin.com/in/alliyuajagun" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
-    <a href="https://github.com/ajagunalliyu" target="_blank"><img src="github.svg" alt="GitHub"></a>
-    <a href="https://medium.com/@ajagunalliyu" target="_blank"><img src="medium.svg" alt="Medium"></a>
-    <a href="https://x.com/Sayyid_Alliyu" target="_blank"><img src="twitter.svg" alt="X"></a>
-  </section>
+  <!-- Contact/Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 Alliyu Ajagun</p>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </footer>
 </body>
 </html>
