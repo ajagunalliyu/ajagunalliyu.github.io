@@ -1,0 +1,65 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #fefefe;
+  color: #222;
+}
+header {
+  text-align: center;
+  background: #003366;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.tagline {
+  font-size: 1.1rem;
+}
+section {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.projects h2, .contact h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  color: #003366;
+}
+.project {
+  margin-bottom: 2rem;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.project h3 {
+  margin-top: 0.5rem;
+}
+.project p {
+  font-size: 0.95rem;
+}
+.contact .icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.contact .icons a {
+  color: #003366;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f4f4f4;
+  color: #666;
+  margin-top: 3rem;
+}
