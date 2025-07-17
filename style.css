@@ -102,9 +102,10 @@ body {
 }
 
 /* Header */
+/* Updated Header Styles */
 header {
   position: relative;
-  height: 100vh;
+  height: 60vh; /* Reduced from 100vh to 60vh */
   margin-top: 60px;
 }
 
@@ -128,38 +129,42 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 20px; /* Added padding for better mobile display */
 }
 
 .header-content {
   color: white;
-  padding: 2rem;
   max-width: 800px;
   animation: fadeIn 1s ease;
 }
 
 .header-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Slightly smaller font */
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.2;
 }
 
 .header-content .tagline {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Slightly smaller tagline */
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  animation: slideUp 0.8s ease;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  color: var(--light-color);
-  margin-bottom: 1rem;
-  animation: slideUp 0.8s ease 0.2s forwards;
-  opacity: 0;
+/* For mobile devices */
+@media (max-width: 768px) {
+  header {
+    height: 50vh; /* Slightly shorter on mobile */
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .header-content .tagline {
+    font-size: 1rem;
+  }
 }
 
 /* Sections */
