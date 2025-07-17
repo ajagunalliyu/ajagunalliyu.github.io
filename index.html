@@ -2,63 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajagun Alliyu Aremu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">My Portfolio</a>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon"><span></span></label>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">Ajagun Alliyu</a>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+        <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+        <li class="navbar-item"><a href="Ajagun-Alliyu-CV.pdf" download class="navbar-link">Resume</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Header -->
   <header>
-    <img src="profile.jpg" alt="Profile" class="profile-img rectangle-img" />
-    <h1>Hi, I'm Alliyu Ajagun</h1>
-    <p class="tagline">Analyst | Insight Builder | Problem Solver</p>
+    <div class="header-content">
+      <div class="profile-img-container">
+        <img src="profile.jpg" alt="Ajagun Alliyu Aremu" class="profile-img"/>
+      </div>
+      <h1>Ajagun Alliyu Aremu</h1>
+      <p class="tagline">Analyst | Strategic thinker, Insights architect, Results enabler (powered by data)</p>
+    </div>
   </header>
 
-  <!-- About -->
   <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I help businesses make sense of their data to drive strategic decisions and improve performance.</p>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <img src="project1.jpg" alt="Project Screenshot" />
-      <h3>Project Title</h3>
-      <p>Short description of your project goes here.</p>
-      <a href="#">View Project</a>
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <p>I am a data analyst with strong skills in transforming raw data into actionable insights using tools like Power BI, Excel, Python, and SQL. I am passionate about turning complex data into clear stories that drive smart decisions.</p>
     </div>
-    <!-- Add more projects as needed -->
   </section>
 
-  <!-- Resume Section -->
-  <section class="about" id="resume">
-    <h2>View Resume</h2>
-    <a href="resume.pdf" class="resume-btn" download>View Resume</a>
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Cybersecurity Project" />
+        <h3><a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">Cybersecurity Intelligence Visualization</a></h3>
+        <p>I used Power BI to analyze and visualize global cybersecurity threats, identifying patterns in attack types, vulnerabilities, and industry exposure.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Global Store Sales Project" />
+        <h3><a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">Global Store Sales Performance</a></h3>
+        <p>I used Power BI to develop an interactive dashboard tracking monthly sales and profits across categories and subcategories to aid business decision-making.</p>
+      </div>
+      <div class="project">
+        <img src="project3.jpg" alt="Customer Feedback Project" />
+        <h3><a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">Customer Feedback Analysis for Hotel Inc.</a></h3>
+        <p>I used Excel to evaluate customer satisfaction metrics and identify actionable trends to improve service quality in the hospitality industry.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact/Footer -->
-  <footer id="contact">
-    <p>&copy; 2025 Alliyu Ajagun</p>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-github"></i></a>
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>ADDRESS</h3>
+          <p>Ilorin, Kwara State</p>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-item">
+          <h3>PHONE</h3>
+          <p>(+234) 703-0633-695</p>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-item">
+          <h3>EMAIL</h3>
+          <p><a href="mailto:ajagunalliyu@gmail.com">ajagunalliyu@gmail.com</a></p>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-item">
+          <h3>SOCIAL</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://medium.com/@ajagunalliyu" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="resume-download">
+        <a href="Ajagun-Alliyu-CV.pdf" download class="resume-btn">📄 Download My Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p class="copyright">&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
