@@ -2,35 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab-link");
   const contents = document.querySelectorAll(".tab-content");
   const mobileSelect = document.getElementById("mobile-tab-select");
-  const heroSection = document.getElementById("hero");
+  const heroSection = document.querySelector(".hero");
   const favicon = document.getElementById("favicon");
   const menuToggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
-
-  // Default tab
-  switchTab("projects");
-
-  // Desktop tab click handler
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      const tabId = tab.getAttribute("data-tab");
-      switchTab(tabId);
-    });
-  });
-
-  // Mobile tab select change handler
-  if (mobileSelect) {
-    mobileSelect.addEventListener("change", () => {
-      switchTab(mobileSelect.value);
-    });
-  }
-
-  // Show/hide mobile nav
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("show");
-    });
-  }
 
   // Tab switching function
   function switchTab(tabId) {
@@ -52,15 +27,40 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileSelect.value = tabId;
     }
 
-    // Toggle hero section for resume
+    // Hide hero when on resume
     if (heroSection) {
       heroSection.style.display = tabId === "resume" ? "none" : "flex";
     }
 
-    // Dynamic favicon switch
+    // Change favicon
     if (favicon) {
       favicon.href = tabId === "resume" ? "profile.jpg" : "favicon-tech.png";
     }
+  }
+
+  // Default tab on page load
+  switchTab("projects");
+
+  // Handle desktop tab clicks
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const tabId = tab.getAttribute("data-tab");
+      switchTab(tabId);
+    });
+  });
+
+  // Handle mobile tab change
+  if (mobileSelect) {
+    mobileSelect.addEventListener("change", () => {
+      switchTab(mobileSelect.value);
+    });
+  }
+
+  // Handle mobile menu toggle
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
   }
 
   // Set current year in footer
