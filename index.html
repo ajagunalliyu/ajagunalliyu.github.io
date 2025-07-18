@@ -2,86 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajagun Alliyu Aremu | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-container">
-      <a href="#" class="navbar-logo">Ajagun Alliyu</a>
-      <div class="navbar-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Ajagun Alliyu Aremu</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
       </div>
-      <ul class="navbar-menu">
-        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
-        <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
-        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
-        <li class="navbar-item"><a href="Ajagun-Alliyu-CV.pdf" download class="navbar-link">Resume</a></li>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Ajagun-Alliyu-CV.pdf" download>Resume</a></li>
       </ul>
     </div>
   </nav>
 
-<header>
-  <div class="header-image">
-    <div class="header-overlay">
-      <div class="header-content">
+  <header class="hero">
+    <div class="container hero-content">
+      <img src="profile.jpg" alt="Ajagun Alliyu" class="profile-pic" />
+      <div class="intro">
         <h1>Ajagun Alliyu Aremu</h1>
-        <p class="tagline">Analyst | Strategic thinker, Insights architect, Results enabler (powered by data)</p>
+        <p>Analyst | Strategic thinker, Insights architect, Results enabler (powered by data)</p>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <section class="about" id="about">
-    <div class="section-container">
-      <p>I am a data analyst with strong skills in transforming raw data into actionable insights using tools like Power BI, Excel, Python, and SQL. I am passionate about turning complex data into clear stories that drive smart decisions.</p>
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <div class="section-container">
-      <div class="project">
-        <img src="project1.jpg" alt="Cybersecurity Project" />
-        <h3><a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">Cybersecurity Intelligence Visualization</a></h3>
-        <p>I used Power BI to analyze and visualize global cybersecurity threats, identifying patterns in attack types, vulnerabilities, and industry exposure.</p>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Global Store Sales Project" />
-        <h3><a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">Global Store Sales Performance</a></h3>
-        <p>I used Power BI to develop an interactive dashboard tracking monthly sales and profits across categories and subcategories to aid business decision-making.</p>
-      </div>
-      <div class="project">
-        <img src="project3.jpg" alt="Customer Feedback Project" />
-        <h3><a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">Customer Feedback Analysis for Hotel Inc.</a></h3>
-        <p>I used Excel to evaluate customer satisfaction metrics and identify actionable trends to improve service quality in the hospitality industry.</p>
-      </div>
+  <section id="about" class="about section">
+    <div class="container">
+      <p>I am a data analyst with strong skills in transforming raw data into actionable insights using Power BI, Excel, Python, and SQL. I'm passionate about turning complex data into clear stories that drive smart decisions.</p>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="section-container">
-      <div class="contact-info">
-        <div class="contact-item">
-          <h3>ADDRESS</h3>
-          <p>Ilorin, Kwara State</p>
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="card">
+          <img src="project1.jpg" alt="Cybersecurity Project" />
+          <h3><a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">Cybersecurity Intelligence Visualization</a></h3>
+          <p>Analyzed and visualized global cybersecurity threats in Power BI, revealing patterns in attacks and vulnerabilities.</p>
         </div>
-        <div class="divider"></div>
-        <div class="contact-item">
-          <h3>PHONE</h3>
-          <p>(+234) 810-3809-010</p>
+        <div class="card">
+          <img src="project2.jpg" alt="Global Store Sales Project" />
+          <h3><a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">Global Store Sales Performance</a></h3>
+          <p>Developed a Power BI dashboard to track sales and profit trends across global store categories for strategic decisions.</p>
         </div>
-        <div class="divider"></div>
-        <div class="contact-item">
-          <h3>EMAIL</h3>
-          <p><a href="mailto:ajagunalliyu@gmail.com">ajagunalliyu@gmail.com</a></p>
+        <div class="card">
+          <img src="project3.jpg" alt="Customer Feedback Project" />
+          <h3><a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">Customer Feedback Analysis for Hotel Inc.</a></h3>
+          <p>Used Excel to explore guest feedback and deliver actionable insights to improve service quality in hospitality.</p>
         </div>
-        <div class="divider"></div>
-        <div class="contact-item">
-          <h3>SOCIAL</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Location:</strong> Ilorin, Kwara State</p>
+..           <p><strong>Phone:</strong> (+234) 810-3809-010</p>
+          <p><strong>Email:</strong> <a href="mailto:ajagunalliyu@gmail.com">ajagunalliyu@gmail.com</a></p>
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
@@ -89,19 +76,24 @@
             <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-      </div>
-      <div class="resume-download">
-        <a href="Ajagun-Alliyu-CV.pdf" download class="resume-btn">📄 Download My Resume</a>
+        <div class="download-btn">
+          <a href="Ajagun-Alliyu-CV.pdf" class="btn" download>Download My Resume</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-content">
-      <p class="copyright">&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("nav-menu").classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
