@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSelect = document.getElementById("mobile-tab-select");
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-  // Default to "projects" tab
+  // Default tab
   switchTab("projects");
 
   // Desktop tab click handler
@@ -16,14 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mobile select change handler
+  // Mobile tab select change handler
   if (mobileSelect) {
     mobileSelect.addEventListener("change", () => {
       switchTab(mobileSelect.value);
     });
   }
 
-  // Function to switch between tabs
+  // Show/hide mobile nav
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  }
+
+  // Tab switching function
   function switchTab(tabId) {
     contents.forEach(content => {
       content.classList.remove("active");
@@ -43,20 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileSelect.value = tabId;
     }
 
-    // Hide hero if on resume tab
+    // Toggle hero section for resume
     if (heroSection) {
       heroSection.style.display = tabId === "resume" ? "none" : "flex";
     }
 
-    // Switch favicon (optional)
+    // Dynamic favicon switch
     if (favicon) {
       favicon.href = tabId === "resume" ? "profile.jpg" : "favicon-tech.png";
     }
   }
 
-  // Set dynamic year in footer
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+  // Set current year in footer
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
   }
 });
