@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
 
-  // Initial setup: default to "projects"
+  // Default to "projects" tab
   switchTab("projects");
 
-  // Desktop tab click
+  // Desktop tab click handler
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
       const tabId = tab.getAttribute("data-tab");
@@ -16,16 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mobile select dropdown
+  // Mobile select change handler
   if (mobileSelect) {
     mobileSelect.addEventListener("change", () => {
       switchTab(mobileSelect.value);
     });
   }
 
-  // Core tab switcher
+  // Function to switch between tabs
   function switchTab(tabId) {
-    // Activate content
     contents.forEach(content => {
       content.classList.remove("active");
       if (content.id === tabId) {
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Highlight selected tab (desktop)
     tabs.forEach(tab => {
       tab.classList.remove("active");
       if (tab.getAttribute("data-tab") === tabId) {
@@ -41,22 +39,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Update mobile dropdown value
     if (mobileSelect) {
       mobileSelect.value = tabId;
     }
 
-    // Toggle hero section visibility
+    // Hide hero if on resume tab
     if (heroSection) {
-      heroSection.style.display = tabId === "resume" ? "none" : "block";
+      heroSection.style.display = tabId === "resume" ? "none" : "flex";
     }
 
-    // Optional favicon switching
+    // Switch favicon (optional)
     if (favicon) {
       favicon.href = tabId === "resume" ? "profile.jpg" : "favicon-tech.png";
     }
   }
 
-  // Footer year
-  document.getElementById("year").textContent = new Date().getFullYear();
+  // Set dynamic year in footer
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 });
