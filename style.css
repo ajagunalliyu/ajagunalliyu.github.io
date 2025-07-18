@@ -103,44 +103,50 @@ body {
 
 /* Header */
 header {
-  text-align: center;
-  padding: 2rem 1rem 0;
+  position: relative;
+  height: 30vh;
   margin-top: 60px;
 }
 
-.profile-image-container {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 1rem;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.profile-image-container:hover {
-  transform: scale(1.02);
-}
-
-.profile-img {
+.header-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url('profile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.name-title {
-  margin-bottom: 2rem;
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.5));
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10%;
 }
 
-.name-title h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
+.header-content {
+  color: white;
+  max-width: 800px;
+  animation: fadeIn 1s ease;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: var(--text-light);
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.2;
+}
+
+.header-content .tagline {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   max-width: 600px;
   margin: 0 auto;
 }
