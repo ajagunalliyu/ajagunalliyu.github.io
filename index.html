@@ -2,139 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ajagun Alliyu Aremu | Portfolio</title>
+  <link id="favicon" rel="icon" type="image/png" href="favicon-tech.png" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon-tech.png" id="favicon">
 </head>
 <body>
   <nav class="navbar">
     <div class="container nav-wrapper">
-      <a href="#" class="logo">Alliyu The Analyst</a>
+      <div class="logo">Alliyu The Analyst</div>
     </div>
   </nav>
 
-  <section class="tabs">
-    <div class="tab-buttons">
-      <button class="tab-link active" data-tab="projects">Projects</button>
-      <button class="tab-link" data-tab="about">About Me</button>
-      <button class="tab-link" data-tab="contact">Contact Me</button>
-      <button class="tab-link" data-tab="resume">Resume</button>
+  <section class="hero-header">
+    <img src="profile.jpg" alt="Ajagun Alliyu" class="hero-img"/>
+    <div class="hero-text">
+      <h1>Alliyu Aremu Ajagun</h1>
+      <p>Analyst | Strategic Thinker | Insights Architect | Results Enabler (powered by data)</p>
     </div>
+  </section>
 
-    <div id="projects" class="tab-content active">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <div class="card">
-            <img src="project1.jpg" alt="Cybersecurity Project" />
-            <h3>Cybersecurity Intelligence Visualization</h3>
-            <p>Analyzed and visualized global cybersecurity threats using Power BI.</p>
-            <a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" class="btn" target="_blank">View Full Report</a>
-          </div>
-          <div class="card">
-            <img src="project2.jpg" alt="Global Store Sales Project" />
-            <h3>Global Store Sales Performance</h3>
-            <p>Created a dashboard in Power BI to assess sales and profit across global regions.</p>
-            <a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" class="btn" target="_blank">View Full Report</a>
-          </div>
-          <div class="card">
-            <img src="project3.jpg" alt="Customer Feedback Project" />
-            <h3>Customer Feedback Analysis</h3>
-            <p>Explored customer feedback using Excel to optimize hospitality services.</p>
-            <a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" class="btn" target="_blank">View Full Report</a>
-          </div>
+  <div class="tab-buttons">
+    <button class="tab-link active" data-tab="projects">Projects</button>
+    <button class="tab-link" data-tab="about">About Me</button>
+    <button class="tab-link" data-tab="contact">Contact Me</button>
+    <button class="tab-link" data-tab="resume">Resume</button>
+  </div>
+
+  <section id="projects" class="tab-content active">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="project1.jpg" class="project-img" alt="Cybersecurity Project" />
+          <h3>Cybersecurity Intelligence Visualization</h3>
+          <p>Analyzed and visualized global cybersecurity threats in Power BI, revealing patterns in attacks.</p>
+          <a href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" class="btn" target="_blank">View Full Report</a>
+        </div>
+        <div class="card">
+          <img src="project2.jpg" class="project-img" alt="Sales Project" />
+          <h3>Global Store Sales Performance</h3>
+          <p>Developed Power BI dashboard to track sales and profit trends across store categories.</p>
+          <a href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" class="btn" target="_blank">View Full Report</a>
+        </div>
+        <div class="card">
+          <img src="project3.jpg" class="project-img" alt="Feedback Project" />
+          <h3>Customer Feedback Analysis</h3>
+          <p>Used Excel to explore guest feedback and deliver actionable insights for hospitality.</p>
+          <a href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" class="btn" target="_blank">View Full Report</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="about" class="tab-content">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p>I am a data-driven professional with strong analytical, visualization, and storytelling capabilities. I specialize in using SQL, Power BI, Excel, and Python to transform raw data into actionable business insights. My background in Mathematics and Business Intelligence enables me to solve problems with precision and clarity. I'm passionate about using data to inform decisions, improve processes, and drive innovation.</p>
-      </div>
+  <section id="about" class="tab-content">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="justified">
+        I am a results-driven data analyst with a strong foundation in SQL, Excel, Power BI, and Python. 
+        I specialize in transforming raw data into actionable insights that drive strategic decisions. 
+        With hands-on experience in data visualization, predictive modeling, and storytelling, 
+        I bring clarity and precision to complex business problems.
+      </p>
     </div>
+  </section>
 
-    <div id="contact" class="tab-content">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <form action="https://formspree.io/f/mzzvzawa" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" rows="5" placeholder="Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://medium.com/@ajagunalliyu" target="_blank"><i class="fab fa-medium"></i></a>
-          <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        </div>
-      </div>
+  <section id="contact" class="tab-content">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form" action="https://formspree.io/f/mzzvzawa" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
+  </section>
 
-    <div id="resume" class="tab-content">
-      <div class="container resume-grid">
+  <section id="resume" class="tab-content">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-grid">
         <div class="resume-left">
-          <img src="profile.jpg" class="resume-photo" alt="Ajagun Alliyu" />
-          <h2>Ajagun Alliyu Aremu</h2>
-          <p>Data Analyst</p>
+          <img src="profile.jpg" alt="Profile Picture" class="resume-photo" />
+          <p><strong>Ajagun Alliyu Aremu</strong></p>
           <p><i class="fas fa-map-marker-alt"></i> Ilorin, Nigeria</p>
           <p><i class="fas fa-envelope"></i> ajagunalliyu@gmail.com</p>
-          <p><i class="fas fa-phone-alt"></i> +234 810 380 9010</p>
+          <p><i class="fas fa-phone"></i> +234 810 380 9010</p>
 
           <h3>Technical Skills</h3>
           <ul>
-            <li>SQL</li>
-            <li>M Language</li>
-            <li>Data Cleaning</li>
-            <li>Descriptive Analysis</li>
+            <li>SQL, Python, Excel</li>
+            <li>Data Transformation</li>
+            <li>Power BI, Data Cleaning</li>
           </ul>
 
           <h3>Soft Skills</h3>
           <ul>
-            <li>Problem-Solving</li>
-            <li>Team Collaboration</li>
-            <li>Time Management</li>
             <li>Communication</li>
+            <li>Attention to Detail</li>
+            <li>Teamwork, Problem-solving</li>
           </ul>
 
           <h3>Tools</h3>
           <ul>
-            <li>Power BI</li>
-            <li>Microsoft Excel</li>
-            <li>Google Workspace</li>
-            <li>Zotero</li>
+            <li>Microsoft Office Tools</li>
+            <li>Microsoft SSMS, MySQL</li>
           </ul>
         </div>
+
         <div class="resume-right">
-          <h3><i class="fas fa-briefcase"></i> Experience</h3>
-          <p><strong>Data Support Assistant – IOTB Tech</strong><br>Mar 2025 – Present</p>
+          <h3>Experience</h3>
+          <p><strong>Mathematics Teacher</strong> – Surulere Senior Secondary School (2021–2024)</p>
           <ul>
-            <li>Collected and cleaned raw datasets for analytics projects</li>
-            <li>Created dashboards in Excel and Power BI</li>
-            <li>Wrote SQL queries for summarizing database information</li>
+            <li>Taught data-driven problem solving</li>
+            <li>Mentored students on project-based tasks</li>
           </ul>
 
-          <p><strong>Education/Administrative Support Officer – Surulere Senior Secondary School</strong><br>Sept 2021 – Jan 2025</p>
+          <p><strong>Administrative Officer</strong> – Al Mawrid Islamic Intl. School (2021)</p>
           <ul>
-            <li>Maintained records and generated reports in Excel</li>
-            <li>Organized internal memos and staff data</li>
+            <li>Handled school data records & reporting</li>
+            <li>Coordinated communication & planning</li>
           </ul>
 
-          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-          <p><strong>M.Sc. Applied Mathematics</strong><br>University of Lagos</p>
-          <p><strong>B.Sc. (Ed.) Mathematics Education</strong><br>University of Ilorin</p>
+          <h3>Education</h3>
+          <ul>
+            <li>M.Sc. Applied Mathematics – University of Lagos</li>
+            <li>B.Sc. (Ed.) Mathematics Education – University of Ilorin</li>
+            <li>Data Analysis Certification – IOTB TECH</li>
+            <li>Data Analysis & Data Science (In view) – ALX Nigeria</li>
+            <li>AI Career Essentials – ALX Nigeria</li>
+            <li>Virtual Assistant Training – ALX Nigeria</li>
+            <li>HSE Levels 1, 2, 3 – Novelle Center</li>
+            <li>Diploma in Computer Studies – Aitalor Training Center, Lagos</li>
+          </ul>
         </div>
       </div>
       <div class="download-resume">
-        <a href="Ajagun-Alliyu-CV.pdf" class="btn" download>Download Resume</a>
+        <a href="Ajagun-Alliyu-CV.pdf" download class="btn">Download My Resume</a>
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <p><i class="fas fa-map-marker-alt"></i> Ilorin, Nigeria</p>
+    <p><i class="fas fa-envelope"></i> ajagunalliyu@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +234 810 380 9010</p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <p>&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
