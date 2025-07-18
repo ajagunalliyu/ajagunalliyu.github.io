@@ -145,21 +145,6 @@ header {
   margin: 0 auto;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .profile-image-container {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .name-title h1 {
-    font-size: 1.8rem;
-  }
-  
-  .tagline {
-    font-size: 1rem;
-    padding: 0
-
 /* For mobile devices */
 @media (max-width: 768px) {
   header {
