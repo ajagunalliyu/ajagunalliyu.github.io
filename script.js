@@ -1,27 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Tab switching
-  const tabLinks = document.querySelectorAll(".tab-link");
-  const tabContents = document.querySelectorAll(".tab-content");
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab-link");
+  const contents = document.querySelectorAll(".tab-content");
+  const yearSpan = document.getElementById("year");
 
-  tabLinks.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      tabLinks.forEach((btn) => btn.classList.remove("active"));
-      tabContents.forEach((tab) => tab.classList.remove("active"));
+  // Handle tab switching
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
 
-      this.classList.add("active");
-      document.getElementById(this.dataset.tab).classList.add("active");
+      tab.classList.add("active");
+      const tabId = tab.getAttribute("data-tab");
+      document.getElementById(tabId).classList.add("active");
+
+      // Change favicon if resume tab
+      const favicon = document.getElementById("favicon");
+      if (tabId === "resume") {
+        favicon.setAttribute("href", "profile.jpg");
+      } else {
+        favicon.setAttribute("href", "favicon-tech.png");
+      }
     });
   });
 
-  // Favicon switching
-  const favicon = document.getElementById("favicon");
-  const observer = new MutationObserver(() => {
-    if (document.getElementById("resume").classList.contains("active")) {
-      favicon.href = "profile.jpg";
-    } else {
-      favicon.href = "favicon-tech.png";
-    }
-  });
-
-  observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+  // Set footer year dynamically
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
