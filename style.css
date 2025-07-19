@@ -336,4 +336,7 @@ h2.section-title {
 .mobile-nav button:hover {
   background-color: #f0f0f0;
 }
+  .desktop-only {
+  display: none;
+  }
 }
