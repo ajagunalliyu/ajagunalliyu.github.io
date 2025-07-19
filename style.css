@@ -404,25 +404,7 @@ h2.section-title {
 .mobile-nav.active {
   display: flex;
 }
-/* Hide mobile menu by default */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #fff;
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  z-index: 999;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 1rem;
-  border-radius: 8px;
-}
 
-/* Show it when active */
-.mobile-menu.active {
-  display: flex;
-}
-  
 .mobile-nav button {
   margin-bottom: 0.5rem;
   background: none;
