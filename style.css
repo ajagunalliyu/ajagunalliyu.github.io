@@ -296,6 +296,24 @@ h2.section-title {
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
+.resume-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Two-column layout on desktop */
+@media (min-width: 768px) {
+  .resume-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .resume-left, .resume-right {
+    width: 48%;
+  }
+}
 .download-resume {
   text-align: center;
   margin-top: 2rem;
