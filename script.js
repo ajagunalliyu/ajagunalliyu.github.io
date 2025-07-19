@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Hamburger menu toggle
   if (hamburger && mobileNav) {
-    menuToggle.addEventListener("click", () => {
+    hamburger.addEventListener("click", () => {
       mobileNav.classList.toggle("active"); // ✅ Class should match CSS
     });
 
