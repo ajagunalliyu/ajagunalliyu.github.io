@@ -161,6 +161,24 @@ h2.section-title {
   align-items: center;
   gap: 2rem;
 }
+/* Mobile-first fix */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* Desktop override */
+@media (min-width: 768px) {
+  .hero-wrapper {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 
 /* === Tabs === */
 .tab-content {
