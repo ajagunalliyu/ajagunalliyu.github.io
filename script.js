@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSelect = document.getElementById("mobile-tab-select");
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
-  const hamburger = document.getElementById("hamburger");
-  const mobile-nav = document.getElementById("mobile-nav");
-  
+  const hamburger = document.getElementById("menu-toggle"); // ✅ FIXED
+  const mobileNav = document.getElementById("mobile-nav");  // ✅ FIXED
+
   // Default tab
   switchTab("projects");
 
@@ -25,21 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-if (hamburger && mobile-nav) {
-  hamburger.addEventListener("click", () => {
-    mobile-nav.classList.toggle("show");
-  });
-
-  // Optional: Close menu when a link is clicked
-  const navLinks = mobile-nav.querySelectorAll("a");
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      mobile-nav.classList.remove("show");
+  // Hamburger menu toggle
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener("click", () => {
+      mobileNav.classList.toggle("active"); // ✅ Class should match CSS
     });
-  });
-}
 
-  // Tab switching function
+    // Optional: Close menu on link click
+    const navLinks = mobileNav.querySelectorAll("button");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+      });
+    });
+  }
+
+  // Tab switching logic
   function switchTab(tabId) {
     contents.forEach(content => {
       content.classList.remove("active");
@@ -59,18 +60,16 @@ if (hamburger && mobile-nav) {
       mobileSelect.value = tabId;
     }
 
-    // Toggle hero section for resume
     if (heroSection) {
       heroSection.style.display = tabId === "resume" ? "none" : "flex";
     }
 
-    // Dynamic favicon switch
     if (favicon) {
       favicon.href = tabId === "resume" ? "profile.jpg" : "favicon-tech.png";
     }
   }
 
-  // Set current year in footer
+  // Set year in footer
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
