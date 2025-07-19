@@ -52,18 +52,18 @@ h2.section-title {
   cursor: pointer;
 }
 
-#mobile-nav {
+.mobile-nav {
   display: none;
   flex-direction: column;
   background-color: #0f172a;
   padding: 1rem 2rem;
 }
 
-#mobile-nav li {
+.mobile-nav li {
   margin-bottom: 1rem;
 }
 
-#mobile-nav li a {
+.mobile-nav li a {
   color: white;
   font-weight: 500;
 }
@@ -285,12 +285,39 @@ section h2 {
   .resume-grid {
     flex-direction: column;
   }
-  #mobile-tab-select {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .nav-menu.desktop-only {
-    display: none;
-  }
+  /* Hamburger icon style */
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Hide mobile menu by default */
+.mobile-nav {
+  display: none;
+  margin-top: 1rem;
+}
+
+/* Show it when active (you'll need to toggle this class with JS) */
+.mobile-nav.active {
+  display: block;
+}
+
+/* Style buttons in the mobile menu */
+.mobile-nav button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.mobile-nav button:hover {
+  background-color: #f0f0f0;
+}
 }
