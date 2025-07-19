@@ -25,9 +25,10 @@
       <div class="hamburger" id="menu-toggle">
         <i class="fas fa-bars"></i>
       </div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
     <div id="mobile-nav" class="mobile-nav">
-      <ul>
+      <ul class="nav-menu" id="nav-menu">
         <li><button class="tab-link" data-tab="projects">Projects</button></li>
         <li><button class="tab-link" data-tab="about">About Me</button></li>
         <li><button class="tab-link" data-tab="contact">Contact Me</button></li>
@@ -195,6 +196,14 @@
       <p>&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
     </div>
   </footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+  
 </body>
 </html>
