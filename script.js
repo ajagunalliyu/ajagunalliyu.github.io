@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSelect = document.getElementById("mobile-tab-select");
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
-  const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
+  const hamburger = document.getElementById("hamburger");
+  const mobile-nav = document.getElementById("mobile-nav");
+  
   // Default tab
   switchTab("projects");
 
@@ -25,12 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Show/hide mobile nav
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("show");
+if (hamburger && mobile-nav) {
+  hamburger.addEventListener("click", () => {
+    mobile-nav.classList.toggle("show");
+  });
+
+  // Optional: Close menu when a link is clicked
+  const navLinks = mobile-nav.querySelectorAll("a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobile-nav.classList.remove("show");
     });
-  }
+  });
+}
 
   // Tab switching function
   function switchTab(tabId) {
