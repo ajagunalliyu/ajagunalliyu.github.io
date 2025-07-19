@@ -46,38 +46,38 @@ h2.section-title {
   gap: 1.5rem;
 }
 /* Hamburger Menu (Mobile) */
-.hamburger {
+#hamburger {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
-.mobile-nav {
+#mobile-nav {
   display: none;
   flex-direction: column;
   background-color: #0f172a;
   padding: 1rem 2rem;
 }
 
-.mobile-nav li {
+#mobile-nav li {
   margin-bottom: 1rem;
 }
 
-.mobile-nav li a {
+#mobile-nav li a {
   color: white;
   font-weight: 500;
 }
 
-.show {
+#show {
   display: flex !important;
 }
 
 /* Section Structure */
-section {
+.section {
   padding: 4rem 2rem;
 }
 
-section h2 {
+.section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -223,7 +223,7 @@ section h2 {
   text-align: center;
   margin-top: 2rem;
 }
-.btn {
+#btn {
   display: inline-block;
   background-color: #38bdf8;
   color: white;
@@ -234,7 +234,7 @@ section h2 {
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
 }
-.btn:hover {
+#btn:hover {
   background-color: #0ea5e9;
   transform: translateY(-2px);
   text-decoration: none;
