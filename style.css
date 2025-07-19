@@ -58,6 +58,47 @@ h2.section-title {
   background-color: #0077cc;
   color: white;
 }
+/* Hide menu by default on mobile */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #1f2937; /* Match your navbar color */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-menu.show {
+  display: flex;
+}
+
+/* Hamburger button styles */
+.hamburger {
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+  }
+}
+
 /* Hamburger Menu (Mobile) */
 #hamburger {
   display: none;
