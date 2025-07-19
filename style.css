@@ -45,20 +45,43 @@ h2.section-title {
   display: flex;
   gap: 1.5rem;
 }
-.nav-menu li button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1rem;
+/* Hamburger Menu (Mobile) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
   cursor: pointer;
 }
-.nav-menu li button:hover {
-  color: #3498db;
-}
-#mobile-tab-select {
+
+#mobile-nav {
   display: none;
-  padding: 0.5rem;
-  font-size: 1rem;
+  flex-direction: column;
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+}
+
+#mobile-nav li {
+  margin-bottom: 1rem;
+}
+
+#mobile-nav li a {
+  color: white;
+  font-weight: 500;
+}
+
+.show {
+  display: flex !important;
+}
+
+/* Section Structure */
+section {
+  padding: 4rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0f172a;
 }
 
 /* === Hero Header === */
@@ -168,9 +191,6 @@ h2.section-title {
 .resume-left {
   flex: 1;
 }
-.resume-right {
-  flex: 2;
-}
 .resume-photo {
   width: 150px;
   height: 150px;
@@ -187,6 +207,9 @@ h2.section-title {
 }
 .resume-left ul {
   padding-left: 1.2rem;
+}
+.resume-right {
+  flex: 2;
 }
 .resume-right ul {
   padding-left: 1.5rem;
