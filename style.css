@@ -45,6 +45,19 @@ h2.section-title {
   display: flex;
   gap: 1.5rem;
 }
+.nav-menu li button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav-menu li button:hover,
+.nav-menu li button.active {
+  background-color: #0077cc;
+  color: white;
+}
 /* Hamburger Menu (Mobile) */
 #hamburger {
   display: none;
@@ -101,6 +114,11 @@ h2.section-title {
 .hero-text p {
   margin: 0.3rem 0;
   font-size: 1rem;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* === Tabs === */
@@ -290,6 +308,33 @@ h2.section-title {
 
 /* === Responsive === */
 @media (max-width: 768px) {
+  .desktop-only {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 60px; /* below the header */
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav button {
+  margin-bottom: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  text-align: left;
+}
   .hero-header {
     flex-direction: column;
     text-align: center;
@@ -301,6 +346,21 @@ h2.section-title {
   .resume-grid {
     flex-direction: column;
   }
+@media screen and (min-width: 992px) {
+  .resume-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.resume-left {
+  flex: 1;
+  max-width: 35%;
+}
+
+.resume-right {
+  flex: 2;
+}
+  
   /* Hamburger icon style */
 .menu-toggle {
   display: block;
