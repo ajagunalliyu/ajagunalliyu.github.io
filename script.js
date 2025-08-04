@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSelect = document.getElementById("mobile-tab-select");
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
-  const hamburger = document.getElementById("menu-toggle"); // ✅ FIXED
+  const hamburger = document.getElementById("toggle-menu"); // ✅ FIXED
   const mobileNav = document.getElementById("mobile-nav");  // ✅ FIXED
 
   // Default tab
