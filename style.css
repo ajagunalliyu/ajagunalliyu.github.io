@@ -53,7 +53,7 @@ h2.section-title {
   font-size: 1rem;
 }
 
-.nav-menu li button:hover,
+.nav-menu li button: hover,
 .nav-menu li button.active {
   background-color: #0077cc;
   color: white;
