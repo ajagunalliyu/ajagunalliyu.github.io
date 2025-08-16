@@ -70,7 +70,7 @@ h2.section-title {
   z-index: 999;
 }
 
-.nav-menu.show {
+.nav-menu.active {
   display: flex;
 }
 
