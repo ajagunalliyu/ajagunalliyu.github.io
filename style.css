@@ -282,7 +282,7 @@ body {
 }
 .cta-grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: left;
     gap: 1.5rem;
     max-width: 600px;
@@ -395,7 +395,7 @@ body {
     .social-icons {
         flex-direction: row;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 1.5rem;
     }
     .social-icons h4 {
         margin-bottom: 0;
