@@ -206,7 +206,7 @@ body {
     transition: color 0.3s ease;
 }
 .card a:hover {
-    color: var(--hover-color);
+    color: var(--secondary-warm);
 }
 .card .btn:hover {
     background: #151c6b; /* New hover color for project buttons */
@@ -283,7 +283,7 @@ body {
 .cta-grid {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     gap: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
