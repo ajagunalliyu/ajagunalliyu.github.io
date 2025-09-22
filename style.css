@@ -136,7 +136,6 @@ body {
 .social-links a:hover {
     color: var(--hover-color);
 }
-
 /* === Hero Section === */
 .hero {
     background: var(--primary-cool);
@@ -154,11 +153,11 @@ body {
     gap: 2rem;
 }
 .hero-image {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1; /* Make it a square */
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border: none; /* Remove border on mobile */
+    border: none;
 }
 .hero-text h1 {
     font-size: 2.5rem;
@@ -168,7 +167,6 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
 }
-
 /* === Projects Grid === */
 .projects-grid {
     display: grid;
@@ -210,7 +208,6 @@ body {
 .card a:hover {
     color: var(--hover-color);
 }
-
 /* === Contact Form === */
 .contact-form {
     max-width: 600px;
@@ -228,7 +225,6 @@ body {
 .contact-form textarea {
     resize: vertical;
 }
-
 /* === Resume Section === */
 .resume-grid {
     display: flex;
@@ -270,31 +266,39 @@ body {
     color: #777;
     margin-bottom: 0.5rem;
 }
-
+.download-btn-container {
+    text-align: left;
+    margin-top: 1.5rem;
+}
 /* === Call-to-action Section === */
 .call-to-action {
-    background: #e6e3e1; /* Lighter warm grey to match image */
+    background: #e6e3e1;
     color: var(--text-dark);
     text-align: center;
     padding: 2rem 0;
 }
 .cta-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
 }
 .cta-item {
-    text-align: left;
-    padding: 1.5rem;
+    padding: 0;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+}
+.cta-item:last-child {
+    border-bottom: none;
 }
 .cta-item h4 {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
     color: #777;
+    text-transform: uppercase;
 }
 .cta-item p a {
     color: var(--text-dark);
@@ -304,38 +308,25 @@ body {
 .cta-item p a:hover {
     color: var(--hover-color);
 }
-.cta-social-links {
-    padding: 1.5rem;
-    text-align: left;
+.social-icons {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
 }
-.cta-social-links h4 {
-    color: #777;
-    margin-bottom: 0.5rem;
-}
-.cta-social-links .icon-group {
+.icon-group {
     display: flex;
     gap: 1.5rem;
-    margin-top: 0.5rem;
+    justify-content: center;
 }
-.cta-social-links .icon-group a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    color: #777;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.icon-group a {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
-.cta-social-links .icon-group a:hover {
-    background: var(--primary-cool);
-    color: var(--accent-bright);
+.icon-group a:hover {
+    color: var(--hover-color);
 }
-
 /* === Footer === */
 .footer {
     background: var(--primary-cool);
@@ -344,9 +335,8 @@ body {
     padding: 1rem 0;
 }
 .footer-social {
-    display: none; /* Hide social links in the footer */
+    display: none;
 }
-
 /* === Desktop Styles === */
 @media (min-width: 768px) {
     .hamburger {
@@ -372,8 +362,8 @@ body {
     .hero-image {
         width: 200px;
         height: 200px;
-        border-radius: 50%; /* Reapply border-radius for desktop */
-        border: 4px solid var(--accent-bright); /* Reapply border for desktop */
+        border-radius: 50%;
+        border: 4px solid var(--accent-bright);
         flex-shrink: 0;
     }
     .hero-text {
@@ -386,20 +376,24 @@ body {
     .resume-left, .resume-right {
         width: 48%;
     }
+    .download-btn-container {
+        text-align: left;
+    }
     .cta-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 1200px;
-        padding: 0 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     .cta-item {
-        border-right: 1px solid rgba(0,0,0,0.1);
         border-bottom: none;
+        padding: 1rem 0;
     }
-    .cta-item:last-child {
-        border-right: none;
+    .social-icons {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
     }
-    .cta-social-links {
-        border-right: none;
+    .social-icons h4 {
+        margin-bottom: 0;
     }
 }
