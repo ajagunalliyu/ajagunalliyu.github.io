@@ -382,15 +382,16 @@ body {
     .cta-grid {
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: left;
     }
     .cta-item {
+        width: 25%;
         border-bottom: none;
         padding: 1rem 0;
     }
     .social-icons {
         flex-direction: row;
-        align-items: center;
+        align-items: left;
         gap: 1rem;
     }
     .social-icons h4 {
