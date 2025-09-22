@@ -315,7 +315,7 @@ body {
     display: flex;
     flex-direction: row; /* Updated to display icons horizontally */
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.0rem;
 }
 .icon-group {
     display: flex;
