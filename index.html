@@ -1,220 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alliyu The Analyst | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon-tech.png" id="favicon" />
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajagun Alliyu | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="container nav-wrapper">
-      <a class="logo" href="#">Alliyu The Analyst</a>
-      <ul class="nav-menu desktop-only">
-        <li><button class="tab-link" data-tab="projects">Projects</button></li>
-        <li><button class="tab-link" data-tab="about">About Me</button></li>
-        <li><button class="tab-link" data-tab="contact">Contact Me</button></li>
-        <li><button class="tab-link" data-tab="resume">Resume</button></li>
-      </ul>
-      <div class="hamburger" id="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-
-    <div id="mobile-nav" class="mobile-nav">
-      <ul>
-        <li><button class="tab-link" data-tab="projects">Projects</button></li>
-        <li><button class="tab-link" data-tab="about">About Me</button></li>
-        <li><button class="tab-link" data-tab="contact">Contact Me</button></li>
-        <li><button class="tab-link" data-tab="resume">Resume</button></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="hero-header" id="hero">
-    <div class="container hero-wrapper">
-    <img src="profile.jpg" alt="Ajagun Alliyu" class="hero-img" />
-    <div class="hero-text">
-      <h1>Alliyu Ajagun Portfolio</h1>
-      <p>Analyst | Insights Architect</p>
-      <p class="justified">
-        I am a result-driven data analyst with a passion for transforming raw data into impactful insights. My work spans data cleaning, transformation, analysis, dashboarding, and storytelling using tools such as SQL, Excel, Power BI, and Python.
-      </p>
-    </div>
-    </div>
-  </header>
-
-  <section id="projects" class="tab-content">
-    <div class="container">
-      <h2 class="section-title" style="text-align: left;">Projects</h2>
-      <div class="projects-grid">
-        <div class="card">
-          <img src="manhattan-skyline@44045187.jpg" alt="Airbnb Listings" class="project-img" />
-          <h3>New York City Airbnb Listings Analysis With SQL + Power BI</h3>
-          <p>Analyzed New York City Airbnb listings for short-term rentals using SQL and then visualized using Power BI</p>
-          <a class="btn" href="https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615" target="_blank">View Full Report</a>
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#hero" class="logo">Alliyu Ajagun</a>
+            <div class="hamburger" id="toggle-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu desktop-menu">
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+            </ul>
         </div>
-        <div class="card">
-          <img src="project1.jpg" alt="Cybersecurity" class="project-img" />
-          <h3>Cybersecurity Intelligence Visualization With Power BI</h3>
-          <p>Analyzed global cybersecurity threats using Power BI and presented insights on attacks.</p>
-          <a class="btn" href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">View Full Report</a>
-        </div>
-         <div class="card">
-          <img src="project3.jpg" alt="Customer Feedback" class="project-img" />
-          <h3>Customer Feedback Analysis for Hotel Inc. With Excel</h3>
-          <p>Explored customer feedback using Excel and provided service enhancement insights.</p>
-          <a class="btn" href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">View Full Report</a>
-        </div>
-        <div class="card">
-          <img src="project2.jpg" alt="Store Sales" class="project-img" />
-          <h3>Global Store Sales Performance With Power BI</h3>
-          <p>Created dashboards to track performance and profits across store categories.</p>
-          <a class="btn" href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">View Full Report</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="tab-content">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="justified">
-        Welcome to my portfolio page, I am a dedicated Data Analyst with a strong foundation in Applied Mathematics, passionate about leveraging quantitative methods to solve complex business problems and drive strategic growth. My unique expertise lies at the intersection of advanced mathematical theory and practical data application.
-        <br><br>
-        I specialize in using tools like SQL, Python, Excel, and Power BI to transform complex data into actionable insights. My core mission is to help companies optimize processes, manage risk, and make data-driven decisions that are grounded in rigorous statistical and mathematical principles.
-        <br><br>
-        My academic background, including an M.Sc. in Applied Mathematics, provides me with a deep understanding of modeling, optimization, and statistical analysis. I combine this foundational knowledge with my technical data skills to tackle real-world challenges in fields like finance, logistics, and operations.
-        <br><br>
-        I am actively seeking opportunities to apply my hybrid skill set to create tangible value for forward-thinking organizations that appreciate a deep, quantitative approach to problem-solving.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact" class="tab-content">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <form class="contact-form" action="https://formspree.io/f/mzzvzawa" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <input type="text" name="subject" placeholder="Subject" required />
-        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="resume" class="tab-content">
-    <div class="container resume-layout">
-      <div class="resume-left">
-        <img src="profile.jpg" alt="Resume Photo" class="resume-photo" />
-        <h3>Alliyu Aremu Ajagun</h3>
-        <p><i class="fas fa-location-dot"></i> Ilorin, Nigeria</p>
-        <p><i class="fas fa-envelope"></i> ajagunalliyu@gmail.com</p>
-        <p><i class="fas fa-phone"></i> (+234) 810-3809-010</p>
-
-        <h4>Technical Skills</h4>
-        <ul>
-          <li>SQL</li>
-          <li>Power BI</li>
-          <li>Excel</li>
-          <li>Python</li>
-          <li>Data Transformation</li>
-          <li>Data Cleaning</li>
-        </ul>
-
-        <h4>Soft Skills</h4>
-        <ul>
-          <li>Strategic Thinking</li>
-          <li>Problem Solving</li>
-          <li>Communication</li>
-          <li>Time Management</li>
-          <li>Teamwork</li>
-        </ul>
-
-        <h4>Tools</h4>
-        <ul>
-          <li>Microsoft SQL & MySQL</li>
-          <li>Power BI</li>
-          <li>Power Query</li>
-          <li>Excel</li>
-          <li>Google Workspace</li>
-          <li>Python</li>
-        </ul>
-      </div>
-
-      <div class="resume-right">
-        <h3>RELEVANT EXPERIENCE</h3>
-        <p>Data Support Assistant (Project-Based) | IOTB Tech. <br /><small>March 2025 - Present</small></p>
-        <ul>
-          <li>Assisted in collecting and cleaning raw datasets for internal analytics projects, ensuring data accuracy and quality.</li>
-          <li>Wrote SQL queries to extract and analyze data, enabling insights into salary distributions and trends.</li>
-          <li>Supported the creation of dashboards using Excel and Power BI to visualize project data and key metrics for stakeholders.</li>
-          <li>Authored SQL queries to filter and summarize data, contributing to efficient data retrieval for analysis.</li>
-          <li>Collaborated with senior analysts to understand BI workflows, reporting standards, and market trend analysis.</li>
-        </ul>
-
-        <p>Education/Administrative Support Officer | Surulere Senior Secondary School, Lagos<br /><small>Sept 2021 - Jan 2025</small></p>
-        <ul>
-          <li>Managed structured databases for staff records, attendance, and payroll documentation.</li>
-          <li>Developed Excel-based reports to analyze performance metrics and departmental workloads, enabling data-driven adjustments.</li>
-          <li>Automated manual processes, such as leave tracking and payroll inputs, reducing administrative errors by 25%.</li>
-        </ul>
-
-        <h3>Education</h3>
-        <ul>
-          <li>M.Sc. Applied Mathematics – University of Lagos</li>
-          <li>B.Sc. (Ed.) Mathematics Education – University of Ilorin</li>
-        </ul>
         
-        <h3>CERTIFICATIONS</h3>
-        <ul>
-          <li>Data Analysis Certification – IOTB TECH</li>
-          <li>Data Analysis Certification - Digital for all Challenge 2.0</li>
-          <li>Data Analysis and Data Science (In view) - ALX Nigeria</li>
-          <li>AI Career Essentials – ALX Nigeria</li>
-          <li>Virtual Assistant Training – ALX Nigeria</li>
-          <li>Diploma in Computer Studies – Aitalor Training Center, Lagos</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="download-resume">
-      <a href="Ajagun-Alliyu-CV.pdf" class="btn" download>Download Resume</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-row">
-          <p><i class="fas fa-location-dot"></i> Ilorin, Nigeria</p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:ajagunalliyu@gmail.com">ajagunalliyu@gmail.com</a></p>
-          <p><i class="fas fa-phone"></i> (+234) 810-3809-010</p>
+        <div id="mobile-nav" class="mobile-nav">
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#resume" class="nav-link">Resume</a>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@ajagunalliyu" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="https://wa.link/0n7hwl" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
         </div>
-        <div class="social-icons">
-          <a href="https://linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://medium.com/@ajagunalliyu" target="_blank"><i class="fab fa-medium"></i></a>
-          <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        </div>
-      </div>
-      <p>&copy; <span id="year"></span> Ajagun Alliyu Aremu. All rights reserved.</p>
-    </div>
-  </footer>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+    </nav>
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
-</script>
-  
+    <header id="hero" class="hero">
+        <div class="container hero-content">
+            <img src="profile.jpg" alt="Alliyu Ajagun" class="hero-image">
+            <div class="hero-text">
+                <h1>Alliyu Aremu Ajagun</h1>
+                <p>Analyst | Strategic Thinker | Insights Architect</p>
+                <p>Your data, my insights — better and smarter outcomes.</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <img src="manhattan-skyline@44045187.jpg" alt="Airbnb Listings" class="project-img">
+                    <h3>NYC Airbnb Listings Analysis with SQL + Power BI</h3>
+                    <p>Analyzed New York City Airbnb listings for short-term rentals using SQL and then visualized using Power BI.</p>
+                    <a class="btn" href="https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615" target="_blank">View Report</a>
+                </div>
+                <div class="card">
+                    <img src="project1.jpg" alt="Cybersecurity" class="project-img">
+                    <h3>Cybersecurity Intelligence Visualization with Power BI</h3>
+                    <p>Analyzed global cybersecurity threats using Power BI and presented insights on attacks.</p>
+                    <a class="btn" href="https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5" target="_blank">View Report</a>
+                </div>
+                <div class="card">
+                    <img src="project3.jpg" alt="Customer Feedback" class="project-img">
+                    <h3>Customer Feedback Analysis for Hotel Inc. with Excel</h3>
+                    <p>Explored customer feedback using Excel and provided service enhancement insights.</p>
+                    <a class="btn" href="https://medium.com/@ajagunalliyu/customer-feedback-analysis-for-hotel-inc-using-excel-c1319f9d0451" target="_blank">View Report</a>
+                </div>
+                <div class="card">
+                    <img src="project2.jpg" alt="Store Sales" class="project-img">
+                    <h3>Global Store Sales Performance with Power BI</h3>
+                    <p>Created dashboards to track performance and profits across store categories.</p>
+                    <a class="btn" href="https://medium.com/@ajagunalliyu/global-store-sales-performance-visualization-using-power-bi-c6a2a4b676f3" target="_blank">View Report</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>Welcome to my portfolio. I am a result-driven data analyst with a passion for transforming raw data into impactful insights. My work spans data cleaning, transformation, analysis, dashboarding, and storytelling using tools such as SQL, Excel, Power BI, and Python. With a blend of analytical thinking and practical problem-solving, I bring clarity to complex data challenges, helping teams and stakeholders make smarter decisions backed by evidence and trends.</p>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container resume-grid">
+            <div class="resume-left">
+                <img src="profile.jpg" alt="Resume Photo" class="resume-photo">
+                <h3>Alliyu Aremu Ajagun</h3>
+                <p><i class="fas fa-location-dot"></i> Ilorin, Nigeria</p>
+                <p><i class="fas fa-envelope"></i> ajagunalliyu@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (+234) 810-3809-010</p>
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>SQL</li>
+                    <li>Power BI</li>
+                    <li>Excel</li>
+                    <li>Python</li>
+                </ul>
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Strategic Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                </ul>
+                <h4>Tools</h4>
+                <ul>
+                    <li>Microsoft SQL & MySQL</li>
+                    <li>Power BI</li>
+                    <li>Excel</li>
+                </ul>
+            </div>
+            <div class="resume-right">
+                <h3>Experience</h3>
+                <div class="experience-item">
+                    <h4>Data Support Assistant – IOTB Tech</h4>
+                    <p class="period">March 2025 – Present</p>
+                    <ul>
+                        <li>Assisted in collecting and cleaning raw datasets for internal analytics projects.</li>
+                        <li>Supported the creation of dashboards using Excel and Power BI.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h4>Education/Administrative Support Officer – Surulere Senior Secondary School</h4>
+                    <p class="period">Sept 2021 – Jan 2025</p>
+                    <ul>
+                        <li>Maintained structured records for internal use with a focus on data accuracy.</li>
+                        <li>Generated comprehensive reports for performance evaluation and operational compliance.</li>
+                    </ul>
+                </div>
+                <h3>Education</h3>
+                <ul>
+                    <li>M.Sc. Applied Mathematics – University of Lagos</li>
+                    <li>B.Sc. (Ed.) Mathematics Education – University of Ilorin</li>
+                </ul>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Data Analysis Certification – IOTB TECH</li>
+                    <li>Data Analysis Certification – Digital for All Challenge 2.0</li>
+                </ul>
+                <a href="Ajagun-Alliyu-CV.pdf" class="btn" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/f/mzzvzawa" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links footer-social">
+                <a href="https://linkedin.com/in/alliyuajagun" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ajagunalliyu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@ajagunalliyu" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="https://wa.link/0n7hwl" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://x.com/Sayyid_Alliyu" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Alliyu Aremu Ajagun. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
