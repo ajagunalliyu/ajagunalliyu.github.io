@@ -208,6 +208,9 @@ body {
 .card a:hover {
     color: var(--hover-color);
 }
+.card .btn:hover {
+    background: #151c6b; /* New hover color for project buttons */
+}
 /* === Contact Form === */
 .contact-form {
     max-width: 600px;
@@ -310,9 +313,9 @@ body {
 }
 .social-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Updated to display icons horizontally */
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 .icon-group {
     display: flex;
@@ -382,7 +385,7 @@ body {
     .cta-grid {
         flex-direction: row;
         justify-content: space-around;
-        align-items: left;
+        align-items: flex-start; /* Updated for alignment */
     }
     .cta-item {
         width: 25%;
@@ -391,7 +394,7 @@ body {
     }
     .social-icons {
         flex-direction: row;
-        align-items: left;
+        align-items: flex-start;
         gap: 1rem;
     }
     .social-icons h4 {
