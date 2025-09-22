@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSelect = document.getElementById("mobile-tab-select");
   const heroSection = document.getElementById("hero");
   const favicon = document.getElementById("favicon");
-  const hamburger = document.getElementById("toggle-menu"); // ✅ FIXED
-  const mobileNav = document.getElementById("mobile-nav");  // ✅ FIXED
+  const hamburger = document.getElementById("toggle-menu");
+  const mobileNav = document.getElementById("mobile-nav");
 
   // Default tab
   switchTab("projects");
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hamburger menu toggle
   if (hamburger && mobileNav) {
     hamburger.addEventListener("click", () => {
-      mobileNav.classList.toggle("active"); // ✅ Class should match CSS
+      mobileNav.classList.toggle("active");
     });
 
     // Optional: Close menu on link click
