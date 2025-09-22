@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileNav = document.getElementById('mobile-nav');
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.nav-link');
+    const heroSection = document.getElementById('hero');
 
     // Toggle mobile navigation visibility
     if (hamburger && mobileNav) {
@@ -45,6 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     section.classList.add('hidden-section');
                 }
             });
+            
+            // Hide hero section on mobile for certain tabs
+            const isMobile = window.matchMedia("(max-width: 767px)").matches;
+            if (isMobile && targetId !== 'projects') {
+                heroSection.classList.add('hidden-mobile');
+            } else {
+                heroSection.classList.remove('hidden-mobile');
+            }
+            
             // Scroll to the top of the newly visible section
             document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
